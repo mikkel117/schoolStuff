@@ -1,11 +1,11 @@
 <script lang="ts">
   import "../gloable.css";
-  export const ssr = false;
 </script>
 
 <nav>
   <a href="/">Home</a>
   <a href="/projects">Projects</a>
+  <a href="/todos">todos</a>
 </nav>
 
 <slot />
