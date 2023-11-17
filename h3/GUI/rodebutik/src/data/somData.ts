@@ -1,4 +1,11 @@
-export const data = [
+type Project = {
+  id: number;
+  projectTitle: string;
+  projectDescription: string;
+  projectCost: number;
+};
+
+export const data: Project[] = [
   {
     id: 1,
     projectTitle: "Project 1",
