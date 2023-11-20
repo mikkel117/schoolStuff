@@ -3,6 +3,7 @@
   export let editProject: boolean;
   export let projectToEdit: any;
   let showAddProject: boolean = false;
+  let nextId: number = 4;
   function toggleAddProject() {
     showAddProject = !showAddProject;
   }
@@ -14,8 +15,9 @@
     const title = formData.get("fTitle");
     const description = formData.get("fDescription");
     const cost = formData.get("fCost");
+    let id = nextId++;
     let newProject = {
-      id: $projects.length + 1,
+      id: id,
       projectTitle: title,
       projectDescription: description,
       projectCost: cost,
